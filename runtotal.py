@@ -11,7 +11,7 @@ lst = list(range(len(pickle.load(open(project + '.pkl', 'rb')))))
 singlenums = {'Time':5, 'Math':2, "Lang":10, "Chart":3, "Mockito":4, "Closure":1, "Cli":4}
 singlenum = singlenums[project]
 totalnum = len(card) * singlenum
-lr = 1e-2
+lr = 1e-3
 seed = 0
 batch_size = 60
 for i in tqdm(range(int(len(lst) / totalnum) + 1)):
